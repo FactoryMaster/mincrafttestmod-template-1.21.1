@@ -2,6 +2,7 @@ package net.justus.testmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.justus.testmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 //test
@@ -13,6 +14,6 @@ public class Mincrafttestmod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
