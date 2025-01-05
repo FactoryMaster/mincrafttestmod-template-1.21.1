@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mincrafttestmod",
+	"version": "${version}",
+	"name": "Mincrafttestmod",
+	"description": "testmod von mir (Justus)",
+	"authors": [
+		"Justus"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mincrafttestmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.justus.testmod.Mincrafttestmod"
+		],
+		"fabric-datagen": [
+			"net.justus.testmod.MincrafttestmodDataGenerator"
+		],
+		"client": [
+			"net.justus.testmod.MinecrafttestmodClient"
+		]
+	},
+	"mixins": [
+		"mincrafttestmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
