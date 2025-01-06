@@ -3,6 +3,7 @@ package net.justus.testmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.justus.testmod.block.ModBlocks;
+import net.justus.testmod.item.ModItemGroups;
 import net.justus.testmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,10 @@ public class testmod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		ModItemGroups.registerItemGroups();
+
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlcks();
 	}
