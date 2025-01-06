@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "mincrafttestmod:item/jakobs_dildo"
+    "layer0": "testmod:item/pink_garnet"
   }
 }

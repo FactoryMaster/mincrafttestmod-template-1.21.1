@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "mincrafttestmod",
+	"id": "testmod",
 	"version": "${version}",
-	"name": "Mincrafttestmod",
+	"name": "testmod",
 	"description": "testmod von mir (Justus)",
 	"authors": [
 		"Justus"
@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.justus.testmod.Mincrafttestmod"
+			"net.justus.testmod.testmod"
 		],
 		"fabric-datagen": [
 			"net.justus.testmod.MincrafttestmodDataGenerator"
@@ -26,7 +26,7 @@
 		]
 	},
 	"mixins": [
-		"mincrafttestmod.mixins.json"
+		"Mincrafttestmod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",
