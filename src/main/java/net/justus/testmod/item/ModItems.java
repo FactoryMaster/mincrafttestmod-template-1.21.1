@@ -1,6 +1,7 @@
 package net.justus.testmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.justus.testmod.item.custom.TestItem;
 import net.justus.testmod.testmod;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -14,6 +15,8 @@ public class ModItems {
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet",new Item(new Item.Settings()));
 
+    public static final Item TESTITEM = registerItem("testitem", new TestItem(new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(testmod.MOD_ID, name), item);
@@ -26,6 +29,7 @@ public static void registerModItems() {
     ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
         fabricItemGroupEntries.add(PINK_GARNET);
         fabricItemGroupEntries.add(RAW_PINK_GARNET);
+        fabricItemGroupEntries.add(TESTITEM);
     });
 
 
